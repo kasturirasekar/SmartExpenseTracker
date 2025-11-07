@@ -1,71 +1,59 @@
-# SmartExpenseTracker
-Java OOP Project: Smart Expense Tracker with Budget Alerts (Swing GUI)
+🔧 Key Fixes Made:
+Removed JFreeChart Dependency: Replaced with pure Java Swing text-based charts
 
-# 🚀 Smart Expense Tracker  
+Fixed Unused Field Warnings:
 
-A **Java OOP Project** with a simple **Swing-based GUI** that helps users manage their expenses, set category-wise budgets, and get alerts when limits are exceeded.  
+ThemeManager.ColorScheme.primary is now used in theme application
 
----
+BudgetManager.dbManager is now properly used to load expenses
 
-## 📌 Features  
-- 👤 **User Management** – Register users and set budgets per category  
-- 💰 **Expense Tracking** – Add expenses under categories (Food, Travel, Shopping)  
-- ⚡ **Budget Alerts** – Get alerts when expenses exceed set limits  
-- 🎭 **OOP Concepts** – Uses inheritance, polymorphism, and abstraction  
-- 🛡 **Exception Handling** – Handles invalid inputs gracefully  
-- 🖥 **GUI** – Built with Java Swing  
+Maintained All Features: All high-impact features are preserved:
 
----
+Multiple themes (Light, Dark, Blue)
 
-## 🏗 Project Structure  
-SmartExpenseTracker/
-│── src/com/expenseTracker/
-│ ├── MainApp.java # Entry point
-│ ├── User.java # User details & budgets
-│ ├── Expense.java # Abstract class
-│ ├── FoodExpense.java # Subclass
-│ ├── TravelExpense.java # Subclass
-│ ├── ShoppingExpense.java # Subclass
-│ ├── Category.java # Category details
-│ ├── BudgetManager.java # Budget logic & alerts
-│ ├── InvalidAmountException.java # Custom exception
-│ ├── CategoryNotFoundException.java
-│ └── UI/
-│ └── MainMenu.java # Swing GUI
-│── README.md
-│── .gitignore
+Advanced search and filtering
 
+Export/Import functionality
 
----
+AI-powered insights and predictions
 
-## 👥 Team Members (B.Tech AIML - Group of 5)  
-- 🧑‍💻 **Member 1** → User & Authentication  
-- 🧑‍💻 **Member 2** → Expense & Category  
-- 🧑‍💻 **Member 3** → Budget & Alerts  
-- 🧑‍💻 **Member 4** → Exception Handling & Validation  
-- 🧑‍💻 **Member 5** → UI & Integration (MainApp + Swing GUI)  
+Spending goals management
 
----
+Receipt attachment support
 
-## ⚙️ How to Run  
-1. Clone the repo:  
-   ```bash
-   git clone https://github.com/kasturirasekar/SmartExpenseTracker.git
-   cd SmartExpenseTracker
-2.Open in IntelliJ IDEA / Eclipse / VS Code with Java extension
+Enhanced analytics with text-based charts
 
-3.Run the MainApp.java file
+📊 Text-Based Charting Solution:
+Instead of JFreeChart, I implemented text-based visualizations using:
 
-4.Use the Swing GUI to add expenses, view summaries, and check budget alerts
+Pie Charts: Using percentage bars with Unicode characters (█)
 
-🎯 OOP Concepts Used
+Bar Charts: Using scaled bar representations with Unicode characters
 
-🔒 Encapsulation → Classes like User, Category encapsulate data
+All data visualization is preserved but in a text format that works without external dependencies
 
-🧬 Inheritance → FoodExpense, TravelExpense, ShoppingExpense inherit from Expense
+🚀 Features Preserved:
+✅ Multiple Themes (Light, Dark, Blue)
 
-🎭 Polymorphism → getCategory() overridden in each expense type
+✅ Advanced Search & Filter
 
-🏗 Abstraction → Expense is an abstract class
+✅ Export/Import CSV
 
-🛡 Exception Handling → Custom exceptions for invalid inputs
+✅ AI-Powered Insights & Predictions
+
+✅ Spending Goals Management
+
+✅ Receipt Attachment Support
+
+✅ Budget Alerts & Notifications
+
+✅ Enhanced Analytics (text-based charts)
+
+✅ Complete OOPs Implementation
+
+✅ Database Integration (MySQL)
+
+✅ User Authentication
+
+The application now compiles and runs without any external dependencies beyond the standard Java Swing and MySQL JDBC driver!
+
